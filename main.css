@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --color-Very-Dark-Blue: hsl(243, 87%, 12%);
+    --color-dark-Blue2: hsl(218, 28%, 13%);
+    --color-Desaturated-Blue: hsl(238, 22%, 44%);
+    --color--Bright-Blue: hsl(224, 93%, 58%);
+    --color-Moderate-Cyan: hsl(170, 45%, 43%);
+    --color-Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --color--Light-Gray: hsl(0, 0%, 75%);
+    --font-family: ('Raleway', sans-serif);
+    --font-family:('Open Sans', sans-serif);
+}
+
+
+
+body{
+   font-family:'Open Sans', sans-serif;
+   font-size: 1.1em;
+   color:hsl(243, 87%, 12%);
+   margin:0;
+}
+img{
+    max-width: 100%;
+}
+h1,h2, h4 {
+    font-family: var('Raleway', sans-serif);
+}
+ h2{
+    font-size: 1.8em;
+    margin-top: 0;
+ }
+ p{
+    font-family: 'Open Sans', sans-serif, 400;
+    font-size: 13px;
+}
+
+.container{
+    padding:25px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1200px;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.align-start {
+
+    align-items: flex-start;
+
+}
+
+.flex > div
+.flex > ul {
+    flex: 1;
+}
+
+
+
+.flex > div:first-child{
+    margin-right: 20px;
+}
+
+.flex > div:last-child{
+    margin-left: 20px;
+}
+
+/* testimonial section */
+
+.testimonial-box p{
+    font-size:14px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+.user-info{
+    display:flex;
+}
+.user-info img{
+    border-radius: 50%;
+    height:50px;
+    margin-right: 10px;
+    width:50px;
+}
+.user-info h4{
+    font-weight: 700;
+    margin:0;
+}
+/* nav styling */
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:30px 0;
+    
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+nav ul a{
+    color:var(--color-Very-Dark-Blue);
+    text-decoration: none;
+    font-family: var('Raleway', sans-serif);
+}
+
+
+/* form section */
+form{
+    display: flex;
+}
+input {
+    border:1px solid var(--color-Very-Dark-Blue);
+    border-radius: 2px;
+    flex: 0.7;
+    font-size: 14px;
+    padding:15px;
+    font-family: var('Raleway', sans-serif);
+}
+input::placeholder{
+    color: var(--color--Light-Gray)
+}
+
+.btn{
+    border:1px solid var(--color-Very-Dark-Blue);
+    background-color: var(--color--Bright-Blue);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: var('Raleway', sans-serif);
+    font-weight: 700;
+    color:white;
+    flex: 0,3;
+    padding:15px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: var(--color-Very-Dark-Blue);
+}
+
+
+/* light blue section */
+
+.light-blue{
+    background-color:var(--color-Light-Grayish-Blue) ;
+    margin-top: 100px;
+    position: relative;
+    padding: 50px 0;
+}
+
+.light-blue::before{
+    content:'';
+    background-image:url(./images/bg-curve-desktop.svg) ;
+    background-size: cover;
+    background-position: center center;
+    position:absolute;
+    top:-60px;
+    left: 0;
+    height: 60px;
+    width:100%;
+}
+
+
+/* green link  */
+.green {
+    font-family: 'Open Sans', sans-serif, 400;
+    color:var(--color-Moderate-Cyan);
+    font-size: 15px;
+    padding-bottom: 10px;
+   
+}
+a{
+    text-decoration: none;
+}
+li{
+    font-family: 'Open Sans', sans-serif, 400;
+    font-size: 13px;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+}
+
+
+/* testimonials */
+.testimonial-box{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 40px;
+    width: 80%;
+    
+}
+.testimonial-box p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+.user-info {
+    display:flex;
+    margin-top: 20px;
+}
+
+.user-info img {
+    border-radius: 50%;
+    height:50px ;
+    margin-right: 10px;
+    width: 50px;
+}
+
+.user-info h4 {
+    font-weight: 700;
+    margin: 0;
+}
+
+.user-info span {
+    font-family: var('Raleway', sans-serif);
+    font-size: 10px;
+    font-weight:  400px; 
+    margin: 0;
+}
+
+
+
+
+ /* social - links  */
+.social-media a {
+    color: white;
+}
+
+
+/* blue section */
+
+.blue {
+    background-color: var(--color-Desaturated-Blue);
+    color: white;
+    padding: 50px 0;
+}
+
+.blue form {
+    flex-direction: column;
+}
+
+.blue form input {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    flex: 1;
+
+}
+
+.blue form button {
+    margin: 20px 0 0;
+    width: 50%;
+
+}
+
+/* footer section  */
+footer {
+    background-color: var(--color-Very-Dark-Blue) ;
+    color: white ;
+    padding: 50px 0 60px;
+}
+
+footer img{
+    padding-right: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: 20px;
+}
+footer .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .circle {
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+
+.fa:hover { 
+    color: var(--color-Desaturated-Blue)
+}
+
+footer p {
+text-align: center;
+}
+
+/* media */
+
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+    .light-blue::before{
+        content:'';
+        background-image:url(./images/bg-curve-mobile.svg) ;
+        height: 80px;
+    }
+    nav{
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    nav ul li {
+        margin: 10px 20px;
+    }
+
+.flex {
+    flex-direction: column;
+}
+
+.flex > div{
+    width: 100%;
+}
+
+.flex > div:first-child{
+    margin-right: 0;
+}
+
+.flex > div:last-child{
+    margin-left: 0;
+}
+
+
+.testimonial-box {
+    width: 100%;
+}
+
+
+.blue form input {
+    flex: 1;
+
+}
+
+.blue form button {
+    margin: 20px 0;
+    width: 100%;
+
+}
+
+.illustration {
+    margin-top: 30px;
+}
+
+.user-info {
+    justify-content: center;
+}
+
+footer ul {
+    padding: 0;
+    width: 100%;
+}
+
+
+}
